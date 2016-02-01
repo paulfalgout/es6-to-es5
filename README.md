@@ -2,20 +2,17 @@
 
 #### Results
 
-![screen shot 2016-02-01 at 11 05 17 am](https://cloud.githubusercontent.com/assets/883126/12727905/ff35b1a4-c8d3-11e5-9d1d-85e34b1f837b.png)
 
-![image](https://cloud.githubusercontent.com/assets/883126/12729016/76a88b26-c8d9-11e5-86d8-59611623471d.png)
-
-| Tools                        | File Size (bytes) | gzip size (bytes) | js execution time (ms) | tool run time (s)|
-| -----------------------------|-------------------|-------------------|------------------------|------------------|
-| webpack + babel + uglify     | 13973             | 3737              | 51.28                  | 6.228            |
-| babel + rollup + uglify      | 15213             | 4175              | 50.81                  | 5.496            |
-| rollup-babel-plugin + uglify | 15365             | 4130              | 49.50                  | 2.880            |
-| closure                      | 15925             | 3824              | 53.15                  | 7.217            |
-| typescript + uglify          | 19455             | 5379              | 48.49                  | 5.340            |
-| babelify + uglify            | 20366             | 4770              | 53.02                  | 7.37             |
-| babel + browserify + uglify  | 20366             | 4770              | 53.37                  | 6.979            |
-| traceur + browserify + uglify| 98117             | 22357             | 66.60                  | 5.329            |
+| Tools                        | File Size (bytes) | gzip size (bytes) |
+| -----------------------------|-------------------|-------------------|
+| webpack + babel + uglify     | 47444             | 11173             |
+| babel + rollup + uglify      | 47402             | 11161             |
+| rollup-babel-plugin + uglify | 47256             | 10850             |
+| closure                      | Unknown           | Unknown           |
+| typescript + uglify          | Unknown           | Unknown           |
+| babelify + uglify            | 75443             | 14439             |
+| babel + browserify + uglify  | 74139             | 13910             |
+| traceur + browserify + uglify| Unknown           | Unknown           |
 
 --------------------------------
 

@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "compile": "babel ../src/src --presets ./node_modules/babel-preset-es2015 --out-dir=dist && browserify dist/app.js | ./node_modules/.bin/uglifyjs --compress - > ../src/dist/bundle.js"
+	  "compile": "babel ../backbone.marionette/src --presets ./node_modules/babel-preset-es2015 --out-dir=dist && browserify dist/backbone.marionette.js  --no-bundle-external | ./node_modules/.bin/uglifyjs --compress - > ../backbone.marionette/lib/core/backbone.marionette.js"
   },
   "dependencies": {
     "babel-cli": "^6.4.5",

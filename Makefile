@@ -1,8 +1,6 @@
 .PHONY: babel typescript closure rollup traceur size rollup-babel-plugin webpack babelify
 
 all:
-	make typescript
-	make size
 	make babel
 	make size
 	make babelify
@@ -10,10 +8,6 @@ all:
 	make rollup-babel-plugin
 	make size
 	make rollup
-	make size
-	make closure
-	make size
-	make traceur
 	make size
 	make webpack
 	make size
@@ -34,7 +28,7 @@ rollup-babel-plugin:
 	cd rollup-babel-plugin; npm i; npm run compile
 
 closure:
-	cd closure; java -jar compiler.jar --language_in=ECMASCRIPT6_STRICT --js_output_file='../src/dist/bundle.js' '../src/src/**.js'
+	cd closure; java -jar compiler.jar --language_in=ECMASCRIPT6_STRICT --js_output_file='../backbone.marionette/lib/core/backbone.marionette.js' '../backbone.marionette/src/**.js'
 
 traceur:
 	cd traceur; npm i; npm run compile
@@ -44,7 +38,7 @@ webpack:
 
 size:
 	@echo -----------------------------------------
-	stat -f%z src/dist/bundle.js
-	gzip -c src/dist/bundle.js | wc -c
+	stat -f%z backbone.marionette/lib/core/backbone.marionette.js
+	gzip -c backbone.marionette/lib/core/backbone.marionette.js | wc -c
 	@echo -----------------------------------------
 

@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "compile": "browserify ../src/src/app.js -t [ babelify --presets [ ./node_modules/babel-preset-es2015 ] ] | ./node_modules/.bin/uglifyjs --compress - > ../src/dist/bundle.js"
+    "compile": "browserify ../backbone.marionette/src/backbone.marionette.js --no-bundle-external -t [ babelify --presets [ ./node_modules/babel-preset-es2015 ] ] | ./node_modules/.bin/uglifyjs --compress - > ../backbone.marionette/lib/core/backbone.marionette.js"
   },
   "dependencies": {
     "babel-core": "^6.1.0",
